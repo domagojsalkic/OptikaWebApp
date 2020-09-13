@@ -1,0 +1,28 @@
+﻿@model IEnumerable<OptikaWeb.Models.Frame>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="h2 text-center border-bottom mb-4">
+    <h2>Svi okviri</h2>
+</div>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <img class="card-img text-center" src="~/FrameImages/@item.ImageUrl" />
+                </div>
+                <h5 class="card-text text-center">
+                    @item.Name
+                </h5>
+                &nbsp;
+            </div>
+            &nbsp;
+        </div>
+    }
+</div>
+

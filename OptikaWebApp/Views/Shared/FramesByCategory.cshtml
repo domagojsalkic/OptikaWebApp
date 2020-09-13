@@ -1,0 +1,28 @@
+﻿<li class="dropdown nav-item">
+    <a asp-controller="Frame"
+       asp-action="ListByCategory"
+       class="dropdown-toggle nav-link text-dark  btn-outline-primary shadow-none rounded p-2" data-toggle="dropdown">Okviri<b></b></a>
+    <ul class="dropdown-menu">
+        <li>
+            <a class="nav-link text-dark  btn-outline-primary rounded p-2" asp-controller="Frame" asp-action="ListByCategory" asp-route-category="">Svi okviri</a>
+        </li>
+        <li class="dropdown-divider"></li>
+
+        <li>
+            <a class="nav-link text-dark  btn-outline-primary rounded p-2" asp-controller="Frame" asp-action="ListByCategory"
+               asp-route-category="Ray Ban">Ray Ban</a>
+        </li>
+        <li class="dropdown-divider"></li>
+
+        <li>
+            <a class="nav-link text-dark  btn-outline-primary rounded p-2" asp-controller="Frame" asp-action="ListByCategory"
+               asp-route-category="Guess">Guess</a>
+        </li>
+        <li class="dropdown-divider"></li>
+
+        <li>
+            <a class="nav-link text-dark  btn-outline-primary rounded p-2" asp-controller="Frame" asp-action="ListByCategory"
+               asp-route-category="D&G">Dolce&Gabbana</a>
+        </li>
+    </ul>
+</li>
